@@ -17,15 +17,17 @@ The web game is deployed at https://github.com/millsh56/JS-Game-Project.git
 # # Game Logic
 
 ```
-trapped in the cat cafe, there are three doors with cats at each you must push a button to feed each cat when it meows. or something of the sort...
+Oh no! looks like you are trapped in the cat cafe!! You'll have to survive the night and keep the cats at bay until daylight.
+There are three doors with cats at each door. You must click on the cats to feed each cat when it meows. or something of the sort...
 if you do not feed the cat it gets red and angry and at a certain point will attack 
+
 three attacks resutls in a loss
 
 surviving for a set time results in a win!
 
 in the works! but
 
-The control panel enables the player to feed angry cats, one at a time. There are three buttons on the panel. One for each cat. 
+
 
 
 
@@ -35,3 +37,6 @@ One cool idea I have: Fast playing almost jumpscare images hehe but of my cat fr
 One that will be a stretch: uhh any audio because I have no idea.. and functionality in general, really streching skills..
 Something else I dont technically know how to do *yet*:
 oh so much, sort of its all doing it in practice now. 
+
+audio meows for each cat
+
