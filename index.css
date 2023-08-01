@@ -1,6 +1,11 @@
+
 body {
     background-image: url("assets/Cat-Cafe.png"); 
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* maybe put in div for readability and center the div */
+    
 }
 
 h1 {
@@ -10,10 +15,23 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#timer {
+    text-align: left;
+}
+
+#strikes {
+    text-align: right;
+}
 #Play {
     background-color: mediumorchid;
     border: 2px solid purple;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 
 }
@@ -26,6 +44,7 @@ h1 {
     background-color: mediumorchid;
     border: 2px solid purple;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
 
@@ -33,7 +52,4 @@ h1 {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-img {
-    display: flex;
-    align-items: center;
-}
+
