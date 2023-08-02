@@ -34,7 +34,8 @@ in the works! but
 ### Post-MVP Plans
 
 One cool idea I have: Fast playing almost jumpscare images hehe but of my cat freddie because he can get you
-One that will be a stretch: uhh any audio because I have no idea.. and functionality in general, really streching skills..
+One that will be a stretch: uhh any audio because I have no idea.. and functionality in general, really stretching skills..
+also adding a fish treat to drop down on click
 Something else I dont technically know how to do *yet*:
 oh so much, sort of its all doing it in practice now. 
 
