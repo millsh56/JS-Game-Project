@@ -1,4 +1,4 @@
-//   add cats
+// add cats
   function addCat(url){
     let image = document.createElement('img')
     image.src = url
@@ -21,9 +21,9 @@ function place(image) {
 }
 
 // position cats
-place(addCat('https://placekitten.com/150/240')).where(200, 450)
-place(addCat('https://placekitten.com/150/240')).where(350, 250)
-place(addCat('https://placekitten.com/150/240')).where(450, 350)
+place(addCat('https://placekitten.com/150/240')).where(200, 100)
+place(addCat('https://placekitten.com/150/240')).where(765, 100)
+place(addCat('https://placekitten.com/150/240')).where(1325, 100)
 
 // alert function ideally on click instruction alert will pop up
 function instructionsAlert() {
@@ -31,15 +31,51 @@ function instructionsAlert() {
   }
 
   // grab instructions button from dom 
-const instructionsButton = document.getElementById("Instructions")
 
-// Wait for the button click event and show the instructions alert
-instructionsButton.onclick = instructionsAlert;
+  const instructionsButton = document.getElementById("Instructions")
+
+// const instructionsButton = document.getElementById("Instructions")
+instructionsButton.addEventListener('click', e => {
+    instructionsAlert()
+})
+
+// this is what will start when play is clicked
+
+// const timerInterval = "hello"
+const timeLeft = 5 * 60;
+
+// Function to update the timer display
+function updateTimer() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    const timer = document.getElementById("timer");
+    timer.textContent = `Time until morning: ${minutes}:${seconds.toString().padStart(2, "0")}`;
+}
+
+// function for winning condition
+function youWin() {
+    clearInterval(timerInterval);
+    alert("You survived the night! The cats thank you for the treats!");
+}
 
 // grab play button from dom and wait for click
-document.getElementById("Play").onclick
+const playButton = document.getElementById("Play")
 
+// playButton.addEventListener('click', e => {
+//     startGame()
+// })
 
+// Start the timer
+function startGameTimer() {
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        updateTimer();
+
+        if (timeLeft <= 0) {
+            youWin();
+        }
+    }, 1000); 
+}
 // Function to get a random cat from the three cats (ie what cat will bubble be positioned over)
 function startGame (min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -50,8 +86,8 @@ function showMeow() {
     const play = startGame(0, 3);
     const start = items[randomIndex];
     const meow = document.getElementById('meow-bubble');
-    meow.style.left = ;
-    meow.style.top = ;
+    // meow.style.left = ;
+    // meow.style.top = ;
     object.style.display = 'block'; 
 }
 
@@ -59,27 +95,37 @@ function showMeow() {
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-// functions call started info
-setInterval(() => {
-    meowBubble();
-    setTimeout(() => {
-        meow();
-    }, 1000); // time in milliseconds meow would stay on screen...???
-    hangry();
-}, 2000); // time in milliseconds for how often meow pops up
+
+// // functions call started info
+// setInterval(() => {
+//     meowBubble();
+//     setTimeout(() => {
+//         meow();
+//     }, 1000); // time in milliseconds meow would stay on screen...???
+//     hangry();
+// }, 2000); // time in milliseconds for how often meow pops up
 
 
 // function to make cat turn red and grow....
-function hangry() {
-    object.style.display = 'SOMETHING';
+
+async function hangryCat() {
+    await
+    image.style.opacity = 1;
+    setTimeout(() => {
+        image.style.filter = "hue-rotate(90deg)";
+        image.style.transform = "scale(1.5)";
+    }, 5000); 
 }
+
+animateImage();
 
 // function for cat to lunge
 function lunge() {
-    
+
 }
 
-// function for adding strikes??
+
+// function for adding strikes
 const strikes = 0; 
 
 function whenCatLunges() {
@@ -90,6 +136,6 @@ function whenCatLunges() {
     // see if there are three strikes
     if (strikes === 3) {
         // Perform actions when the player loses
-        alert("GAME OVER! The cats got you three times you are dead! Hit play to try again");
+        alert("GAME OVER! The cats got you three times so you are dead! Hit play to try again");
     }
 }
