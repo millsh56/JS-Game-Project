@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <title>Cat Attack Game</title>
+
 <body>
     <h1>Cat ATTACK!</h1>
     <div>
@@ -15,24 +16,27 @@
             looks
             like someone forgot to feed them...</h3>
     </div>
-    <button id="Play">Play</button>
+    <div class="buttons">
+        <button id="Play">Play</button>
+    </div>
     <!-- on click start game -->
-    <button id="Instructions">Instructions</button>
-    <!-- on click pop up display with rules -->
-
+    <div class="buttons">
+        <button id="Instructions">Instructions</button>
+        <!-- on click pop up display with rules -->
     </div>
 
-    <div>
+    <div id="timerBox">
         <p id="timer">Time Until Morning</p>
         <!-- timer here -->
     </div>
-    <div>
+    <div id="strikesBox">
         <p id="strikes">Strikes</p>
         <!-- strikes here -->
     </div>
-
+    <div id="gameBoard">
+    </div>
     <script src="cat-attack.js"></script>
-    
+
 </body>
 
 </html>
