@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<title>Cat Attack Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <title>Cat Attack Game</title>
 
-<body>
+  <body>
     <h1>Cat ATTACK!</h1>
     <div>
-        <h3>Oh no! Looks like you got stuck in the cat cafe after dark! Are those cats watching you? They sure are,
-            looks
-            like someone forgot to feed them...</h3>
+      <h3>
+        Oh no! Looks like you got stuck in the cat cafe after dark! Are those
+        cats watching you? They sure are, looks like someone forgot to feed
+        them...
+      </h3>
     </div>
     <div class="buttons">
-        <button id="Play">Play</button>
+      <button id="Play">Play</button>
     </div>
     <!-- on click start game -->
     <div class="buttons">
-        <button id="Instructions">Instructions</button>
-        <!-- on click pop up display with rules -->
+      <button id="Instructions">Instructions</button>
+      <!-- on click pop up display with rules -->
     </div>
 
     <div id="timerBox">
-        <p id="timer">Time Until Morning</p>
-        <!-- timer here -->
+      <p id="timer">Time Until Morning:</p>
+      <!-- timer here -->
     </div>
     <div id="strikesBox">
-        <p id="strikes">Strikes</p>
-        <!-- strikes here -->
+      <p id="strikes">Strikes:</p>
+      <!-- strikes here -->
     </div>
     <div id="gameBoard">
+      <div id="freddie"><img class = "cats" id = "freddieKarlFazbear" src="assets/freddie.png"></div>
+      <div id="baby"><img class = "cats" id = "princessDiana" src="assets/baby.png"></div>
+      <div id="yam"><img class = "cats" id = "missBaby" src="assets/yam.png"></div>
     </div>
+
     <script src="cat-attack.js"></script>
-
-</body>
-
+  </body>
 </html>
