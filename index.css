@@ -40,7 +40,7 @@ body {
     padding: 0%;
     position: absolute;
     top: 569px;
-    left: 800px;
+    left: 818px;
 }
 
 h1 {
@@ -108,12 +108,22 @@ p {
 }
 
 #princessDiana {
-    height: 572px;
-    width: 349px;
+    height: 585px;
+    width: 308px;
 }
 
 #missBaby {
-    height: 389px;
-    width: 325px;
+    height: 374px;
+    width: 302px;
 }
   
+#meow-bubble {
+    display: none;
+    position: absolute;
+}
+
+.buttons {
+    position: absolute;
+    top: 10px;
+    /* left: -268px; */
+}
