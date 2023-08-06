@@ -128,5 +128,25 @@ p {
 .buttons {
     position: absolute;
     top: 10px;
-    /* left: -268px; */
+}
+
+#freddieMeow {
+    position: absolute;
+    top: 197px;
+    left: -6px;
+    opacity: 0;
+}
+
+#babyMeow {
+    position: absolute;
+    top: 197px;
+    left: 293px;
+    opacity: 0;
+}
+
+#yamMeow {
+    position: absolute;
+    top: 197px;
+    left: 580px;
+    opacity: 0;
 }

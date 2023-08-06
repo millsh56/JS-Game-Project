@@ -19,12 +19,12 @@
     </div>
     <div class="buttons">
       <button id="Play">Play</button>
-    <!-- on click start game -->
-    <div class="buttons">
-      <button id="Instructions">Instructions</button>
-      <!-- on click pop up display with rules -->
+      <!-- on click start game -->
+      <div class="buttons">
+        <button id="Instructions">Instructions</button>
+        <!-- on click pop up display with rules -->
+      </div>
     </div>
-</div>
 
     <div id="timerBox">
       <p id="timer">Time Until Morning:</p>
@@ -35,16 +35,35 @@
       <!-- strikes here -->
     </div>
     <div id="gameBoard">
-      <div id="freddie"><img class = "cats" id = "freddieKarlFazbear" src="assets/freddie.png" alt="Cat 1" data-new-image="assets/freddieLunge.png"></div>
-      <div id="baby"><img class = "cats" id = "princessDiana" src="assets/baby.png"alt="Cat 2" data-new-image="assets/babyLunge.png"></div>
-      <div id="yam"><img class = "cats" id = "missBaby" src="assets/yam.png" alt="Cat 3" data-new-image="assets/yamLunge.png"></div>
+      <div id="freddie" class="cats">
+        <img
+          id="freddieKarlFazbear"
+          src="assets/freddie.png"
+          alt="Cat 1 Freddie"
+          data-new-image="assets/freddieLunge.png"
+        />
+      </div>
+      <div id="freddieMeow"><img class = "currentMeow" src="assets/meow.png" /></div>
+      <div id="baby" class="cats">
+        <img
+          id="princessDiana"
+          src="assets/baby.png"
+          alt="Cat 2 Baby"
+          data-new-image="assets/babyLunge.png"
+        />
+      </div>
+      <div id="babyMeow"><img class = "currentMeow" src="assets/meow.png" /></div>
+      <div id="yam" class="cats">
+        <img
+          id="missBaby"
+          src="assets/yam.png"
+          alt="Cat 3 Yam"
+          data-new-image="assets/yamLunge.png"
+        />
+      </div>
+      <div id="yamMeow"><img class = "currentMeow" src="assets/meow.png" /></div>
     </div>
 
     <script src="cat-attack.js"></script>
   </body>
 </html>
-
-
-
-
-
