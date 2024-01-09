@@ -1,9 +1,13 @@
+$body-color: peachpuff;
+$purple: purple;
+$mediumorchid: mediumorchid;
+$font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 body {
-    background-color: peachpuff;
+    background-color: $body-color;
     justify-content: center;
     height: 100%;
     width: 100%;
-    
 }
 
 #gameBoard {
@@ -17,95 +21,80 @@ body {
     width: 793px;
     display: flex;
     justify-content: center;
-
 }
 
-#freddie {
+#freddie,
+#baby,
+#yam {
     margin: 0;
     padding: 0%;
     position: absolute;
+}
+
+#freddie {
     top: 319px;
     left: -19px;
 }
 
 #baby {
-    margin: 0;
-    padding: 0%;
-    position: absolute;
     top: 177px;
     left: 259px;
 }
 
 #yam {
-    margin: 0;
-    padding: 0%;
-    position: absolute;
     top: 286px;
     left: 513px;
 }
 
 h1 {
-    color: purple;
+    color: $purple;
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $font-family;
     text-align: center;
-
 }
 
 h3 {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
+    font-family: $font-family;
 }
 
-#timer {
-    text-align: left;
-    font-size: 24px;
-}
-
+#timer,
 #strikes {
     text-align: left;
     font-size: 24px;
 }
 
-#Play {
+#Play,
+#Instructions {
     position: absolute;
-    top: 173px;
-    left: 821px;
     font-size: 20px;
-    background-color: mediumorchid;
-    border: 2px solid purple;
+    background-color: $mediumorchid;
+    border: 2px solid $purple;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $font-family;
 }
 
-
-#Play:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+#Play {
+    top: 173px;
+    left: 821px;
 }
 
 #Instructions {
-    position: absolute;
     top: 117px;
     left: 787px;
-    font-size: 20px;
-    background-color: mediumorchid;
-    border: 2px solid purple;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
+#Play:hover,
 #Instructions:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 p {
     font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $font-family;
 }
 
-#freddieKarlFazbear{
+#freddieKarlFazbear {
     height: 275px;
     width: 251px;
 }
@@ -119,7 +108,7 @@ p {
     height: 342px;
     width: 270px;
 }
-  
+
 #meow-bubble {
     display: none;
     position: absolute;
@@ -130,23 +119,22 @@ p {
     top: 10px;
 }
 
-#freddieMeow {
-    position: absolute;
-    top: 197px;
-    left: -6px;
-    opacity: 0;
-}
-
-#babyMeow {
-    position: absolute;
-    top: 197px;
-    left: 293px;
-    opacity: 0;
-}
-
+#freddieMeow,
+#babyMeow,
 #yamMeow {
     position: absolute;
     top: 197px;
-    left: 580px;
     opacity: 0;
+}
+
+#freddieMeow {
+    left: -6px;
+}
+
+#babyMeow {
+    left: 293px;
+}
+
+#yamMeow {
+    left: 580px;
 }
